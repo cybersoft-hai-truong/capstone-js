@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 75px;
+  background-color: #21B3F1;
+  position: relative;
+}
+
+.cart {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.75);
+  right: 10%;
+  top: 20px;
+  position: absolute;
+}
+
+.cart-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -25%);
+  width: 16px;
+  height: 16px;
+  font-size: 0.7em;
+  background-color: #2163f1;
+  border-radius: 50%;
+}
+
+.feature {
+  padding-top: 50px;
+  text-align: center;
+  background-color: white;
+}
+
+.feature-title {
+  font-family: "Georgia", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #7e7e7e;
+  text-transform: none;
+  margin-bottom: 3px;
+  line-height: 29px;
+}
+
+.feature-product {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 47px;
+  color: #454545;
+  font-size: 36px;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.feature-product::before,
+.feature-product::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: #21b3f1;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.feature-product::before {
+  bottom: 6px;
+  margin-left: -30px;
+}
