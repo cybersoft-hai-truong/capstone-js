@@ -6,4 +6,10 @@ class ProductService {
       .then((response) => response.json())
       .catch((error) => console.log(error));
   }
+
+  static getProduct(id) {
+    return fetch(`${this.baseURL}/${id}`)
+      .then((response) => response.json())
+      .catch((error) => console.log(error));
+  }
 }
